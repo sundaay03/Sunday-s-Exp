@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Terminal Header -->
+    <div class="terminal-header">
+        <div class="terminal-buttons">
+            <div class="close-btn"></div>
+            <div class="minimize-btn"></div>
+            <div class="maximize-btn"></div>
+        </div>
+        <div class="terminal-title">terminal-portofolio:~$</div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <div class="profile-pic">
+                    <div class="profile-img"><img src="sandi.webp" alt="profile"></div>
+                    <div class="scanline"></div>
+                </div>
+                <h2 class="username">Sandi Riandi</h2>
+                <p class="user-title">Mahasiswa Informatika <br> Universitas Sultan Ageng Tirtayasa</p>
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Online</span>
+                </div>
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> <span>Home</span></a></li>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> <span>Tentang Saya</span></a></li>
+                    <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> <span>Keahlian</span></a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> <span>Proyek</span></a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> <span>Kontak</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="terminal-command">
+                <p class="command-line">> last login: <span id="current-date"></span></p>
+                <p class="command-line">> system: Portofolio_v2.1</p>
+                <p class="command-line">> status: <span class="status-text">Secure</span></p>
+                <p class="command-line">> access_level: <span class="access-level">Admin</span></p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Home Section -->
+            <section id="home" class="section active">
+                <div class="home-content">
+                    <h1 class="typing-text"><span class="highlight"></span></h1>
+                    <div class="terminal-output">
+                        <p>> Mahasiswa Informatika dengan minat dalam</p>
+                        <p class="cyber-text">>> Cybersecurity & Data Science</p>
+                        <p>> Menganalisis, mengamankan, dan mengolah data untuk membangun sistem yang lebih aman.</p>
+                    </div>
+                    
+                    <div class="hacker-animation">
+                        <div class="matrix-code"></div>
+                        <div class="firewall"></div>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">Lihat Proyek <i class="fas fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Hubungi Saya <i class="fas fa-terminal"></i></a>                    </div>
+                    </div>
+                </section>
+
+            <!-- About Section -->
+            <section id="about" class="section">
+                <h2 class="section-title">> about_me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>> Saya adalah mahasiswa Informatika dengan passion di bidang Cybersecurity dan Data Science. Saya percaya bahwa keamanan siber dan analisis data adalah dua bidang yang saling melengkapi dalam era digital ini.</p>
+                        <div class="terminal-box">
+                            <p class="terminal-line">> pendidikan:</p>
+                            <p class="terminal-line indent">>> Teknik Informatika, Universitas Sultan Ageng Tirtayasa</p>
+                            <p class="terminal-line indent">>> Tahun: 2025</p>
+                            <p class="terminal-line indent">>> IPK: 4.00</p>
+                        </div>
+                        <div class="terminal-box">
+                            <p class="terminal-line">> minat_penelitian:</p>
+                            <p class="terminal-line indent">>> Keamanan Jaringan & Analisis Ancaman</p>
+                            <p class="terminal-line indent">>> Synthetic Data Generation untuk Testing Sistem</p>
+                            <p class="terminal-line indent">>> Machine Learning untuk Deteksi Anomali</p>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="data-flow">
+                            <div class="data-node" id="node1">Data</div>
+                            <div class="data-node" id="node2">Analisis</div>
+                            <div class="data-node" id="node3">Keamanan</div>
+                            <div class="data-node" id="node4">Sintesis</div>
+                            <div class="connection-line" id="line1"></div>
+                            <div class="connection-line" id="line2"></div>
+                            <div class="connection-line" id="line3"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <h2 class="section-title">> skills_expertise</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-shield-alt"></i> Cybersecurity</h3>
+                        <div class="skill">
+                            <p>Network Security</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <p>Ethical Hacking</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <p>Cryptography</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <p>Vulnerability Assessment</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 70%"></div></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3><i class="fas fa-database"></i> Data Science</h3>
+                        <div class="skill">
+                            <p>Python (Pandas, NumPy)</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <p>Machine Learning</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <p>Data Visualization</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <p>Synthetic Data Generation</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                        <div class="skill">
+                            <p>Wireshark, Nmap</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <p>Linux/Unix</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <p>SQL & NoSQL Databases</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <p>Git & Docker</p>
+                            <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section">
+                <h2 class="section-title">> projects_portfolio</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Network Intrusion Detection System</h3>
+                        <p>Sistem deteksi intrusi jaringan menggunakan machine learning untuk mengidentifikasi serangan siber dalam waktu nyata.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>Wireshark</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-indicator completed"></span> Selesai
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Synthetic Financial Data Generator</h3>
+                        <p>Generator data finansial sintetis untuk pengujian sistem perbankan tanpa melanggar privasi data sensitif.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>GANs</span>
+                            <span>Pandas</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-indicator in-progress"></span> Dalam Pengembangan
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Password Strength Analyzer</h3>
+                        <p>Alat analisis keamanan password dengan algoritma machine learning untuk menilai kerentanan kredensial.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>Cryptography</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-indicator completed"></span> Selesai
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Cybersecurity Threat Dashboard</h3>
+                        <p>Dashboard visualisasi ancaman siber dengan analisis data real-time dari berbagai sumber log keamanan.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>D3.js</span>
+                            <span>Elasticsearch</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-indicator planning"></span> Perencanaan
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <h2 class="section-title">> contact_me</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <a href="mailto:riandisandi031006@gmail.com" aria-label="Email">
+                                <h3>Email</h3>
+                                <p>riandisandi031006@gmail.com</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <a href="https://wa.me/62895401561803" target="_blank" aria-label="WhatsApp">
+                                <h3>Telepon</h3>
+                                <p>+62 895 4015 61803</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <a href="https://github.com/sundaay03" target="_blank" aria-label="GitHub">
+                                <h3>GitHub</h3>
+                                <p>github.com/sundaay03</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <a href="https://www.linkedin.com/in/sandi-riandi-b80749381/" target="_blank" aria-label="LinkedIn">
+                                <h3>LinkedIn</h3>
+                                <p>linkedin.com/in/sandi-riandi</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <div>
+                                <a href="https://www.instagram.com/sundays.exp/" target="_blank" aria-label="Instagram">
+                                <h3>Instagram</h3>
+                                <p>instagram.com/sundays.exp</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-facebook"></i>
+                            <div>
+                                <a href="https://www.facebook.com/sandi.riandi.2025" target="_blank" aria-label="Facebook">
+                                <h3>Facebook</h3>
+                                <p>facebook.com/Sandi Riandi</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <div class="terminal-box">
+                            <p class="terminal-line">> send_message.exe</p>
+                            <form id="messageForm">
+                                <div class="form-group">
+                                    <label for="name">> nama:</label>
+                                    <input type="text" id="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">> email:</label>
+                                    <input type="email" id="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">> subjek:</label>
+                                    <input type="text" id="subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">> pesan:</label>
+                                    <textarea id="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-paper-plane"></i> Kirim Pesan
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>> Portofolio v2.1 | Last Updated: <span id="current-year"></span></p>
+            <p class="hint">> Gunakan keyboard untuk navigasi: [Tab] untuk pindah section, [Enter] untuk memilih</p>
+        </div>
+    </footer>
+
+    <!-- Hacking Animation Overlay -->
+    <div class="hacking-animation" id="hackingAnim">
+        <div class="binary-code"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
