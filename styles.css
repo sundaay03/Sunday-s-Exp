@@ -502,14 +502,16 @@ body {
     transition: all 0.3s;
 }
 
-.project-card a, h3, p {
+.project-card a,{
     text-decoration: none;
+    color: inherit;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 255, 0, 0.2);
     border-color: #00ff00;
+    text-decoration: none;
 }
 
 .project-icon {
@@ -741,4 +743,5 @@ body {
         align-items: center;
     }
 }
+
 
