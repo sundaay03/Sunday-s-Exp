@@ -502,6 +502,10 @@ body {
     transition: all 0.3s;
 }
 
+.project-card a {
+    text-decoration: none;
+}
+
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 255, 0, 0.2);
