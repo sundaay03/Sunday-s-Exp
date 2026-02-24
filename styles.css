@@ -502,7 +502,7 @@ body {
     transition: all 0.3s;
 }
 
-.project-card a {
+.project-card a, h3, p {
     text-decoration: none;
 }
 
@@ -741,3 +741,4 @@ body {
         align-items: center;
     }
 }
+
