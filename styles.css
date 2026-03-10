@@ -587,6 +587,10 @@ body {
     flex: 1;
 }
 
+.contact-info a {
+    text-decoration: none;
+}
+
 .contact-item {
     display: flex;
     align-items: center;
@@ -743,5 +747,6 @@ body {
         align-items: center;
     }
 }
+
 
 
