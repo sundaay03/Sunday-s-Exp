@@ -581,6 +581,7 @@ body {
 .contact-container {
     display: flex;
     gap: 40px;
+    text-decoration: none;
 }
 
 .contact-info {
@@ -747,6 +748,7 @@ body {
         align-items: center;
     }
 }
+
 
 
 
